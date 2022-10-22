@@ -5,15 +5,18 @@ __lua__
 -- (c) enzyme42.com 2022
 
 function _init()
+cls()
 end
 
 function _update60()
+	for t=0,100 do
+		x=rnd(127)
+		y=rnd(127)
+		pset(x,y,rnd(16))
+	end
 end
 
 function _draw()
-	x=rnd(127)
-	y=rnd(127)
-	pset(x,y,rnd(16))
 end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
