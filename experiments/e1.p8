@@ -1,15 +1,15 @@
 pico-8 cartridge // http://www.pico-8.com
 version 38
 __lua__
--- pico test #1
--- (c) enzyme42.com 2022
+-- experiment #1
+-- (c) enzyme42.com 2022+
 
 function _init()
 cls()
 end
 
 function _update60()
-	for t=0,100 do
+	for t=0,1000 do
 		x=rnd(127)
 		y=rnd(127)
 		pset(x,y,rnd(16))
