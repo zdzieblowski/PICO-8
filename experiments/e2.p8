@@ -8,10 +8,26 @@ function _init()
  cls()
 end
 
-function _update60()
+function _update()
+if flr(rnd(16)) == 0 then
+  r = 2^flr(rnd(7))
+ 
+  for i=0,128/r do
+   for t=0,128/r do
+    rectfill(
+     t*r,
+     i*r,
+     t*r+r,
+     i*r+r,
+     rnd(16)
+    )
+   end
+  end
+ end
 end
 
 function _draw()
+	pal(rnd(16),rnd(16),1)
 end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
